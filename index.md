@@ -1,5 +1,5 @@
 ---
-layout: with-sidebar
+layout: default
 title: "ePortfolio"
 ---
 
