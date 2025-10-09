@@ -12,7 +12,9 @@ This site showcases my final project for the Computer Science Capstone at SNHU, 
 - Three enhancements to the Travlr project
 - Narratives explaining each enhancement and its alignment with program outcomes
 
-[Watch the Code Review Video](https://youtu.be/OFDothTvoj4)
+## Code Review Video
+
+<iframe width="560" height="315" src="https://youtu.be/OFDothTvoj4" title="Travlr Project Code Review" frameborder="0" allowfullscreen></iframe>
 
 ## Original Artifact: Travlr Project (CS465)
 
