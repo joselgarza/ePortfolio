@@ -18,7 +18,7 @@ This site showcases my final project for the Computer Science Capstone at SNHU, 
 
 This is the original version of the Travlr full stack application, created during CS465 before any enhancements were applied.
 
-🔗 [View Original Project (Main Branch)](https://github.com/joselgarza/cs465-fullstack/tree/main)
+🔗 <a href="https://github.com/joselgarza/cs465-fullstack/tree/main" target="_blank">View Original Project (Main Branch)</a>
 
 ---
 
@@ -34,7 +34,7 @@ This enhancement focused on modularizing the Angular frontend, implementing rout
 
 This enhancement restored backend search functionality, refined regex validation, and handled edge cases.
 
-🔗 [View Enhancement Two Branch](https://github.com/joselgarza/cs465-fullstack/tree/enhancement-two)
+🔗 <a href="https://github.com/joselgarza/cs465-fullstack/tree/enhancement-two" target="_blank">View Enhancement Two Branch</a>
 
 ---
 
@@ -42,5 +42,5 @@ This enhancement restored backend search functionality, refined regex validation
 
 This enhancement added compound indexing, normalized schema inputs, and improved validation logic.
 
-🔗 [View Enhancement Three Branch](https://github.com/joselgarza/cs465-fullstack/tree/enhancement-three)
+🔗 <a href="https://github.com/joselgarza/cs465-fullstack/tree/enhancement-three" target="_blank">View Enhancement Three Branch</a>
 
