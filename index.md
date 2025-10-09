@@ -3,7 +3,7 @@ layout: default
 title: "ePortfolio"
 ---
 
-# Welcome to My CS499 ePortfolio
+# Welcome to My CS499 ePortfolio {#top}
 
 Thank you for visiting my ePortfolio! This site showcases my final project for the Computer Science Capstone at SNHU, including:
 
@@ -35,6 +35,8 @@ This is the original version of the Travlr full stack application, created durin
 
 🔗 <a href="https://github.com/joselgarza/cs465-fullstack/tree/main" target="_blank">View Original Project (Main Branch)</a>
 
+[⬆️ Back to Top](#top)
+
 ---
 
 ## Enhancement One: Software Design & Engineering {#enhancement-one}
@@ -42,6 +44,8 @@ This is the original version of the Travlr full stack application, created durin
 This enhancement focused on modularizing the Angular frontend, implementing route guards, and adopting standalone architecture.
 
 🔗 <a href="https://github.com/joselgarza/cs465-fullstack/tree/enhancement-one" target="_blank">View Enhancement One Branch</a>
+
+[⬆️ Back to Top](#top)
 
 ---
 
@@ -51,6 +55,8 @@ This enhancement restored backend search functionality, refined regex validation
 
 🔗 <a href="https://github.com/joselgarza/cs465-fullstack/tree/enhancement-two" target="_blank">View Enhancement Two Branch</a>
 
+[⬆️ Back to Top](#top)
+
 ---
 
 ## Enhancement Three: Databases {#enhancement-three}
@@ -59,3 +65,4 @@ This enhancement added compound indexing, normalized schema inputs, and improved
 
 🔗 <a href="https://github.com/joselgarza/cs465-fullstack/tree/enhancement-three" target="_blank">View Enhancement Three Branch</a>
 
+[⬆️ Back to Top](#top)
