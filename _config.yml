@@ -4,6 +4,14 @@ author: "https://github.com/joselgarza"
 copyright: "© 2025 Jose Garza"
 theme: minima
 
+# CSS link
+sass:
+  style: compressed
+
+include:
+  - assets/css/custom.css
+
+
 # Top navigation links
 header_pages:
   - index.md
