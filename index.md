@@ -5,11 +5,12 @@ title: "ePortfolio"
 
 # Welcome to My CS499 ePortfolio
 
-This site showcases my final project for the Computer Science Capstone at SNHU, including:
+Thank you for visiting my ePortfolio! This site showcases my final project for the Computer Science Capstone at SNHU, including:
 
 - My professional self-assessment
-- A code review video
-- Three enhancements to the Travlr project
+- The original project artifacts comprising the MEAN stack Travlr Listings application from CS465
+- A code review video, submitted as the first milestone in this course
+- Three enhancements to the Travlr Listings project (Milestones Two, Three, and Four)
 - Narratives explaining each enhancement and its alignment with program outcomes
 
 <!-- 🔗 Sticky Quick Navigation -->
@@ -17,7 +18,7 @@ This site showcases my final project for the Computer Science Capstone at SNHU, 
   <strong>Quick Navigation:</strong>
   <ul>
     <li><a href="#code-review">Code Review Video</a></li>
-    <li><a href="#original">Original Project Code</a></li>
+    <li><a href="#original">Travlr Listings: Original Project</a></li>
     <li><a href="#enhancement-one">Enhancement One</a></li>
     <li><a href="#enhancement-two">Enhancement Two</a></li>
     <li><a href="#enhancement-three">Enhancement Three</a></li>
