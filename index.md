@@ -13,6 +13,8 @@ Thank you for visiting my ePortfolio! This site showcases my final project for t
 - Three enhancements to the Travlr Trip Listings project (Milestones Two, Three, and Four)
 - Narratives explaining each enhancement and its alignment with program outcomes
 
+> 🔒 For security and academic integrity reasons, the project repository is private. If you're a reviewer or instructor, please [request access](https://github.com/joselgarza/cs465-fullstack) via GitHub or contact me directly [here](mailto:jose.garza4@snhu.edu).
+
 ---
 
 ### 🔗 Quick Navigation
