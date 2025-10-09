@@ -1,16 +1,50 @@
-<div style="display: flex;">
-  <aside style="width: 200px; padding: 1rem; background-color: #f4f4f4;">
-    <h3>Navigation</h3>
-    <ul>
-      <li><a href="/ePortfolio/">Home</a></li>
-      <li><a href="/ePortfolio/code-review.html">Code Review</a></li>
-      <li><a href="/ePortfolio/enhancement-one.html">Enhancement One</a></li>
-      <li><a href="/ePortfolio/enhancement-two.html">Enhancement Two</a></li>
-      <li><a href="/ePortfolio/enhancement-three.html">Enhancement Three</a></li>
-    </ul>
-  </aside>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <!-- Minima Header -->
+    <header class="site-header" role="banner">
+      <div class="wrapper">
+        <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+        <nav class="site-nav">
+          {% for page in site.pages %}
+            {% if page.title %}
+              <a class="page-link" href="{{ page.url | relative_url }}">{{ page.title }}</a>
+            {% endif %}
+          {% endfor %}
+        </nav>
+      </div>
+    </header>
 
-  <main style="flex-grow: 1; padding: 1rem;">
-    {{ content }}
-  </main>
-</div>
+    <!-- Sidebar + Main Content -->
+    <div style="display: flex; max-width: 1200px; margin: 0 auto;">
+      <aside style="width: 220px; padding: 1rem; background-color: #f4f4f4;">
+        <h3>Navigation</h3>
+        <ul style="list-style: none; padding-left: 0;">
+          <li><a href="{{ '/' | relative_url }}">Home</a></li>
+          <li><a href="{{ '/code-review.html' | relative_url }}">Code Review</a></li>
+          <li><a href="{{ '/enhancement-one.html' | relative_url }}">Enhancement One</a></li>
+          <li><a href="{{ '/enhancement-two.html' | relative_url }}">Enhancement Two</a></li>
+          <li><a href="{{ '/enhancement-three.html' | relative_url }}">Enhancement Three</a></li>
+        </ul>
+      </aside>
+
+      <main style="flex-grow: 1; padding: 2rem;">
+        {{ content }}
+      </main>
+    </div>
+
+    <!-- Minima Footer -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="wrapper">
+        <h2 class="footer-heading">{{ site.title }}</h2>
+        <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
+      </div>
+    </footer>
+  </body>
+</html>
