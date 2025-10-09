@@ -17,6 +17,8 @@ Thank you for visiting my ePortfolio! This site showcases my final project for t
 
 ### 🔗 Quick Navigation
 
+- [Professional Self-Assessment](#self-assessment)
+- [Travlr Trip Listings: Original Project](#original)
 - [Code Review Video](#code-review)
 - [Enhancement One](#enhancement-one)
 - [Enhancement Two](#enhancement-two)
