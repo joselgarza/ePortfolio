@@ -6,8 +6,8 @@ theme: minima
 
 # Top navigation links
 header_pages:
-- index.md
-- code-review.md
-- enhancement-one.md
-- enhancement-two.md
-- enhancement-three.md
+  - index.md
+  - code-review.md
+  - enhancement-one.md
+  - enhancement-two.md
+  - enhancement-three.md
