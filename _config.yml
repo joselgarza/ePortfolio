@@ -1,4 +1,12 @@
+# _config.yaml
 title: "Jose Garza"
 author: "https://github.com/joselgarza"
 copyright: "© 2025 Jose Garza"
 theme: minima
+
+# Top navigation links
+- index.md
+- code-review.md
+- enhancement-one.md
+- enhancement-two.md
+- enhancement-three.md
