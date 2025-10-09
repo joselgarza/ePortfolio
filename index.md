@@ -13,18 +13,16 @@ Thank you for visiting my ePortfolio! This site showcases my final project for t
 - Three enhancements to the Travlr Trip Listings project (Milestones Two, Three, and Four)
 - Narratives explaining each enhancement and its alignment with program outcomes
 
-<!-- 🔗 Sticky Quick Navigation -->
-<div style="position: sticky; top: 0; background-color: white; padding: 1rem; z-index: 1000; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-  <strong>Quick Navigation:</strong>
-  <ul>
-    <li><a href="#self-assessment">Professional Self-Assessment</a></li>
-    <li><a href="#original">Travlr Trip Listings: Original Project</a></li>
-    <li><a href="#code-review">Code Review Video</a></li>
-    <li><a href="#enhancement-one">Enhancement One</a></li>
-    <li><a href="#enhancement-two">Enhancement Two</a></li>
-    <li><a href="#enhancement-three">Enhancement Three</a></li>
-  </ul>
-</div>
+---
+
+### 🔗 Quick Navigation
+
+- [Code Review Video](#code-review)
+- [Enhancement One](#enhancement-one)
+- [Enhancement Two](#enhancement-two)
+- [Enhancement Three](#enhancement-three)
+
+---
 
 ## Professional Self-Assessment {#self-assessment}
 
