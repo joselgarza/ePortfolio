@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "ePortfolio: Jose Garza"
+title: "ePortfolio"
 ---
 
 # Welcome to My CS499 ePortfolio
