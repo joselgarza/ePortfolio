@@ -26,7 +26,7 @@ This is the original version of the Travlr full stack application, created durin
 
 This enhancement focused on modularizing the Angular frontend, implementing route guards, and adopting standalone architecture.
 
-🔗 [View Enhancement One Branch](https://github.com/joselgarza/cs465-fullstack/tree/enhancement-one)
+🔗 <a href="https://github.com/joselgarza/cs465-fullstack/tree/enhancement-one" target="_blank">View Enhancement One Branch</a>
 
 ---
 
