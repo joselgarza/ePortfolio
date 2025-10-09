@@ -1,6 +1,6 @@
 ---
 layout: default
-title: ePortfolio: Jose Garza
+title: "ePortfolio: Jose Garza"
 ---
 
 # Professional Self-Assessment
