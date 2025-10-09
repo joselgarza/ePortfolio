@@ -9,7 +9,7 @@ Thank you for visiting my ePortfolio! This site showcases my final project for t
 
 - My professional self-assessment
 - The original project artifacts comprising the MEAN stack Travlr Trip Listings application from CS465
-- A code review video, submitted as the first milestone in this course
+- A code review video, submitted as Milestone One in this course
 - Three enhancements to the Travlr Trip Listings project (Milestones Two, Three, and Four)
 - Narratives explaining each enhancement and its alignment with program outcomes
 
@@ -17,13 +17,40 @@ Thank you for visiting my ePortfolio! This site showcases my final project for t
 <div style="position: sticky; top: 0; background-color: white; padding: 1rem; z-index: 1000; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
   <strong>Quick Navigation:</strong>
   <ul>
-    <li><a href="#code-review">Code Review Video</a></li>
+    <li><a href="#self-assessment">Professional Self-Assessment</a></li>
     <li><a href="#original">Travlr Trip Listings: Original Project</a></li>
+    <li><a href="#code-review">Code Review Video</a></li>
     <li><a href="#enhancement-one">Enhancement One</a></li>
     <li><a href="#enhancement-two">Enhancement Two</a></li>
     <li><a href="#enhancement-three">Enhancement Three</a></li>
   </ul>
 </div>
+
+## Professional Self-Assessment {#self-assessment}
+
+Over the course of my Computer Science program at SNHU, I’ve grown from a capable developer into a strategic, security-focused engineer who builds narratable, modular, and professionally aligned applications. This ePortfolio showcases that evolution through a series of enhancements to the Travlr full stack application — each chosen to demonstrate technical depth, architectural clarity, and alignment with real-world expectations.
+
+My specialization in secure full stack development is reflected in my approach to route guards, authentication flows, schema validation, and backend resilience. I sequence enhancements not just for technical impact, but for narratable clarity — ensuring each step is defensible, rubric-aligned, and professionally presentable.
+
+### Course Outcomes Alignment
+
+- **Software Design & Engineering (Outcome 1):** I refactored the Angular frontend into a modular, standalone architecture and implemented route guards to enforce role-based access control. These changes improved maintainability, scalability, and security.
+
+- **Algorithms & Data Structures (Outcome 2):** I restored backend search functionality by debugging schema mismatches and refining regex validation. I handled edge cases methodically, ensuring robust and user-centric data handling.
+
+- **Databases (Outcome 3):** I normalized schema inputs, added compound indexing, and improved validation logic to support efficient queries and secure data storage. These enhancements reflect real-world database design principles.
+
+- **Security (Outcome 4):** Across all enhancements, I prioritized secure coding practices — from route guards and RBAC to input validation and schema enforcement. I also demonstrated awareness of authentication flows and data protection.
+
+- **Professional Communication (Outcome 5):** This ePortfolio itself is a reflection of my ability to narrate technical work clearly and professionally. I’ve embedded code review videos, linked enhancement branches, and structured content for reviewer clarity.
+
+### Final Reflection
+
+I approach development with a pragmatic mindset — balancing ambition with feasibility, and always seeking narratable clarity. I troubleshoot methodically, adapt to modern paradigms, and design with empathy for users and reviewers alike. This ePortfolio is not just a showcase of code — it’s a reflection of who I’ve become as a developer: resilient, strategic, and ready to contribute meaningfully to the field.
+
+[⬆️ Back to Top](#top)
+
+---
 
 ## Code Review Video {#code-review}
 
