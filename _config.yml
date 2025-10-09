@@ -5,6 +5,7 @@ copyright: "© 2025 Jose Garza"
 theme: minima
 
 # Top navigation links
+header_pages:
 - index.md
 - code-review.md
 - enhancement-one.md
