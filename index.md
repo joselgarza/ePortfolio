@@ -56,6 +56,10 @@ I approach development with a pragmatic mindset — balancing ambition with feas
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/OFDothTvoj4" title="Travlr Project Code Review" frameborder="0" allowfullscreen></iframe>
 
+[⬆️ Back to Top](#top)
+
+---
+
 ## Original Artifact: Travlr Project (CS465) {#original}
 
 This is the original version of the Travlr full stack application, created during CS465 before any enhancements were applied.
