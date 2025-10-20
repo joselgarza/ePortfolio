@@ -108,14 +108,6 @@ Together, they demonstrate my ability to develop and improve complex systems, pr
 
 ---
 
-## Code Review Video {#code-review}
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/OFDothTvoj4" title="Travlr Project Code Review" frameborder="0" allowfullscreen></iframe>
-
-[⬆️ Back to Top](#top)
-
----
-
 ## Original Artifact: Travlr Project (CS465) {#original}
 
 This is the original version of the Travlr MEAN stack application, created during CS 465: Full-Stack Development I (July - August 2025) before any enhancements were applied.
@@ -123,6 +115,14 @@ This is the original version of the Travlr MEAN stack application, created durin
 The artifact began as an Express server-rendered HTML/Handlebars implementation and was later refactored into a modular Angular Single Page Application (SPA) later in the class. This refactoring allowed me to apply Separation of Concerns (SoC), improve maintainability, and align with modern front-end architecture standards.  
 
 🔗 <a href="https://github.com/joselgarza/cs465-fullstack/tree/main" target="_blank">View Original Project (Main Branch)</a>
+
+[⬆️ Back to Top](#top)
+
+---
+
+## Code Review Video {#code-review}
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OFDothTvoj4" title="Travlr Project Code Review" frameborder="0" allowfullscreen></iframe>
 
 [⬆️ Back to Top](#top)
 
