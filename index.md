@@ -162,6 +162,22 @@ This enhancement restored backend search functionality, refined regex validation
 
 🔗 <a href="https://github.com/joselgarza/cs465-fullstack/tree/enhancement-two" target="_blank">View Enhancement Two Branch</a>
 
+<details>
+<summary><strong>📘 Read Enhancement Narrative</strong></summary>
+<br>
+<p><strong>Description of Artifact:</strong><br>
+The original artifact for this enhancement was the backend portion of the Travlr Trip Listings MEAN stack app, created during CS465 (July–August 2025).</p>
+
+<p><strong>Justification for Enhancements:</strong><br>
+The original application lacked search functionality and had limited support for flexible queries. This enhancement introduced a full-stack search feature that allows users to locate trips based on destination, tags, or description. I implemented fuzzy matching using MongoDB’s <code>$text</code> and <code>$regex</code> operators, added pagination with <code>skip</code> and <code>limit</code>, and incorporated a hash map-based caching layer to store frequent search terms and reduce redundant queries.</p>
+
+<p><strong>Reflection on the Enhancement Process:</strong><br>
+This enhancement gave me the opportunity to apply algorithmic principles and data structure design in a real-world context. One challenge was balancing strict validation with flexible search input. I refined regex logic to support partial matches while maintaining input integrity. Testing edge cases helped ensure consistent behavior across different query formats.</p>
+
+<p>Instructor feedback encouraged me to narrate the search logic clearly and validate the caching strategy. This enhancement aligns with the <strong>Algorithms & Data Structures</strong> outcome through recursive logic, regex refinement, and search optimization. It also supports <strong>Security</strong> and <strong>Software Engineering</strong> by enforcing input validation and improving backend resilience.</p>
+
+</details>
+<br>
 [⬆️ Back to Top](#top)
 
 ---
@@ -172,4 +188,21 @@ This enhancement added compound indexing, normalized schema inputs, and improved
 
 🔗 <a href="https://github.com/joselgarza/cs465-fullstack/tree/enhancement-three" target="_blank">View Enhancement Three Branch</a>
 
+<details>
+<summary><strong>📘 Read Enhancement Narrative</strong></summary>
+<br>
+<p><strong>Description of Artifact:</strong><br>
+The original artifact for this enhancement was the MongoDB database layer supporting the Travlr Trip Listings MEAN stack app, created during CS465 (July–August 2025).</p>
+
+<p><strong>Justification for Enhancements:</strong><br>
+The original implementation lacked advanced indexing and schema validation. This enhancement focused on improving query performance, input integrity, and search capabilities. I added a <code>$text</code> index on key fields like destination and description, created compound indexes (e.g., destination + date), and enforced schema validation using Mongoose to prevent injection and ensure data consistency.</p>
+
+<p><strong>Reflection on the Enhancement Process:</strong><br>
+This was my first time designing compound indexes and validating their performance impact. I used documentation and test cases to confirm that the indexes improved query efficiency without breaking existing functionality. I also sanitized inputs and refined schema logic to support scalable search and secure data handling.</p>
+
+<p>Feedback from earlier milestones helped me narrate the indexing strategy and clarify validation rules. This enhancement aligns with the <strong>Databases</strong> outcome by demonstrating thoughtful schema design, indexing, and validation. It also reinforces <strong>Security</strong> and <strong>Software Engineering</strong> through input sanitization and maintainable backend structure.</p>
+
+</details>
+<br>
 [⬆️ Back to Top](#top)
+
