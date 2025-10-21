@@ -243,20 +243,89 @@ This enhancement restored backend search functionality, refined regex validation
 <details>
 <summary><strong>📘 Read Enhancement Narrative</strong></summary>
 <br>
-<p><strong>Description of Artifact:</strong><br>
-The original artifact for this enhancement was the backend portion of the Travlr Trip Listings MEAN stack app, created during CS465 (July–August 2025).</p>
+<h3>🧩 Artifact Description</h3>
 
-<p><strong>Justification for Enhancements:</strong><br>
-The original application lacked search functionality and had limited support for flexible queries. This enhancement introduced a full-stack search feature that allows users to locate trips based on destination, tags, or description. I implemented fuzzy matching using MongoDB’s <code>$text</code> and <code>$regex</code> operators as well as added pagination with <code>skip</code> and <code>limit</code> parameters.</p>
+<p>
+The artifact is a modular Angular application originally developed in <strong>CS-465 Full-Stack Development I</strong> on <strong>August 18, 2025</strong>. It includes user and admin views for managing travel listings. My enhancements focus on the admin Angular site located in the <code>/app_admin/</code> directory.
+</p>
 
-<p><strong>Reflection on the Enhancement Process:</strong><br>
-Enhancing this artifact taught me how to sequence backend and frontend improvements for  clarity. I began by designing the search endpoint, then layered in full-text and fuzzy logic, followed by pagination and frontend integration. I faced challenges with JSON parsing errors, proxy misrouting, and variable scoping in the backend. These issues required methodical debugging and reinforced the importance of clear response formatting and defensive coding.</p>
+<p>
+For Enhancement Two, I extended the backend and frontend functionality to support full-stack search with pagination and fuzzy matching. This enhancement builds on the modular architecture established in Enhancement One and introduces a new search endpoint in the Express backend, integrated with the Angular admin interface.
+</p>
 
-<p>One key lesson was the importance of narratable fallback logic. When MongoDB’s <code>$text</code> search failed to match typos like “daweson,” the fuzzy fallback ensured that users still received relevant results. This layered approach reflects my ability to anticipate edge cases and design resilient systems.</p>
+<h3>✅ Justification for Inclusion</h3>
 
-<p>I also learned to manage verbosity in backend logging. During testing, I logged entire result sets to the console, which became overwhelming. I refined this by summarizing result counts and search terms, maintaining traceability without sacrificing clarity. Through this process, I strengthened my ability to plan enhancements strategically, troubleshoot full-stack issues methodically, and narrate technical decisions.</p>
+<p>
+I selected this enhancement to demonstrate my ability to implement layered search logic, integrate backend and frontend components, and troubleshoot full-stack communication. The original artifact lacked any backend search capability and relied solely on client-side filtering. This enhancement showcases my skills in RESTful API design, MongoDB query optimization, and user experience polish.
+</p>
 
-<p>This enhancement aligns with the <strong>Algorithms & Data Structures</strong> outcome through recursive logic, regex refinement, and search optimization. It also supports <strong>Security</strong> and <strong>Software Engineering</strong> by enforcing input validation and improving backend resilience.</p>
+<p>Specifically, I implemented:</p>
+
+<ul>
+  <li><strong>Full-Stack Search Endpoint:</strong> Created a new Express route (<code>/api/trips/search</code>) that supports full-text and fuzzy search across trip fields
+      <br>
+      <img src="images/e2-1.png" alt="Full-Stack Search Endpoint" width="600">
+  </li>
+  <li><strong>Pagination Support:</strong> Enabled query parameters (<code>searchTerm</code>, <code>page</code>, <code>limit</code>) to control result size and navigation
+      <br>
+      <img src="images/e2-2.png" alt="Pagination Support" width="600">
+  </li>
+  <li><strong>MongoDB <code>$text</code> Search:</strong> Leveraged native text indexing for relevance scoring
+      <br>
+      <img src="images/e2-3.png" alt="MongoDB" width="600">
+  </li>
+  <li><strong>Fuzzy Matching with fast-fuzzy:</strong> Implemented a fallback search strategy to catch near-matches and typos
+      <br>
+      <img src="images/e2-4.png" alt="Fuzzy Matching" width="600">
+  </li>
+  <li><strong>Frontend Integration via <code>TripService</code>:</strong> Refactored the Angular service to call the backend endpoint with query parameters
+      <br>
+      <img src="images/e2-5.png" alt="Refactoring Angular Service" width="600">
+  </li>
+  <li><strong>UX Polish:</strong> Preserved the “No results found” message and ensured consistent response formatting for frontend rendering
+      <br>
+      <img src="images/e2-6.png" alt="UX Polish Example" width="600">
+  </li>
+  <li><strong>Backend Resilience:</strong> Debugged and resolved parsing errors, route misconfigurations, and temporal dead zone issues to ensure stable operation
+      <br>
+      <img src="images/e2-7.png" alt="Postman Example" width="600">
+  </li>
+</ul>
+
+<p>
+These enhancements align with software engineering best practices and demonstrate my ability to deliver narratable, strategic improvements that span backend logic, frontend integration, and user experience.
+</p>
+
+<h3>🎯 Course Outcomes Met</h3>
+
+<p>
+This enhancement demonstrates substantial progress toward the following Computer Science program outcomes:
+</p>
+
+<ul>
+  <li><strong>Design and evaluate computing solutions:</strong> I designed a layered search strategy that combines full-text and fuzzy logic, evaluated its performance, and integrated it into the existing architecture using RESTful principles.</li>
+  <li><strong>Demonstrate innovative techniques in software engineering/design/database:</strong> I implemented MongoDB <code>$text</code> search, fuzzy matching with fast-fuzzy, and pagination logic to deliver scalable and user-friendly search functionality.</li>
+  <li><strong>Develop a security mindset:</strong> I ensured that the search endpoint returned consistent, sanitized responses and avoided exposing sensitive backend errors to the client.</li>
+  <li><strong>Deliver professional-quality communication:</strong> I narrated each enhancement with clarity and strategic intent, aligning my technical decisions with rubric expectations and preparing the artifact for ePortfolio presentation and instructor review.</li>
+</ul>
+
+<h3>🔍 Reflection on the Enhancement Process</h3>
+
+<p>
+Enhancing this artifact taught me how to sequence backend and frontend improvements for clarity. I began by designing the search endpoint, then layered in full-text and fuzzy logic, followed by pagination and frontend integration. I faced challenges with JSON parsing errors, proxy misrouting, and variable scoping in the backend. These issues required methodical debugging and reinforced the importance of clear response formatting and defensive coding.
+</p>
+
+<p>
+One key lesson was the importance of narratable fallback logic. When MongoDB’s <code>$text</code> search failed to match typos like “daweson,” the fuzzy fallback ensured that users still received relevant results. This layered approach reflects my ability to anticipate edge cases and design resilient systems.
+</p>
+
+<p>
+I also learned to manage verbosity in backend logging. During testing, I logged entire result sets to the console, which became overwhelming. I refined this by summarizing result counts and search terms, maintaining traceability without sacrificing clarity.
+</p>
+
+<p>
+Through this process, I strengthened my ability to plan enhancements strategically, troubleshoot full-stack issues methodically, and narrate technical decisions. Moving forward, I will continue to sequence enhancements in focused sessions, balancing ambition with feasibility and maintaining clarity throughout.
+</p>
 
 </details>
 <br>
