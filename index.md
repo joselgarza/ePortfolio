@@ -75,10 +75,10 @@ The following areas showcase application of my skills:
 ## 🧩 Core Competencies
 
 - **Team Collaboration**  
-  Throughout my tenure at SNHU as well as my professional experience, I have led and been member of small and large teams, fostering cross-functional team collaboration, fielding various communication styles, and supporting both direct and indirect efforts to achieve overall team impact. To support my efforts in this regard, I have experience using Visual Studio, Azure DevOps for story boards and code lifecycle management, GitHub, Microsoft Teams, SharePoint, and more. I value honesty, transparency, and direct language in collaborative situations.
+  Throughout my tenure at SNHU as well as my professional experience, I have led and been a member of small and large teams, fostering cross-functional team collaboration, fielding various communication styles, and supporting both direct and indirect efforts to achieve overall team impact. To support my efforts in this regard, I have experience using Visual Studio, Azure DevOps for story boards and code lifecycle management, GitHub, Microsoft Teams, SharePoint, and more. I value honesty, transparency, and direct language in collaborative situations.
 
 - **Stakeholder Communication**  
-  I enjoy championing projects and their requirements, objectives, milestones, and completion to both technical and non-technical audiences. Be it live presentations to leaders, training to users, or technical documentation, my aim is to always ensure that technical designs and solutions are easily understood to all audiences.
+  I enjoy translating projects and their requirements, objectives, and milestones to both technical and non-technical audiences. Be it live presentations to leaders, training to users, or technical documentation, my aim is to always ensure that technical designs and solutions are easily understood to all audiences.
 
 - **Data Structures & Algorithms**  
   I apply core structures such as arrays, lists, stacks, and hash maps as needed to solve problems effectively. I’ve implemented recursive and iterative algorithms for sorting, searching, and traversal. Additionally, I evaluate how fast an algorithm runs (time complexity: e.g. linear O(n) vs. quadratic O(n²)) and how much memory it uses (space complexity: e.g. storing extra arrays, recursion stack depth) before choosing or implementing a solution. This helps me pick the most efficient and scalable approach, especially when handling large datasets, nested loops, or recursive functions. I balance algorithmic challenges between performance with maintainability.
@@ -141,7 +141,7 @@ This enhancement focused on modularizing the Angular frontend, implementing rout
 The original artifact for this enhancement was the Angular frontend portion of the Travlr Trip Listings MEAN stack app, created during CS465 (July–August 2025).</p>
 
 <p><strong>Justification for Enhancements:</strong><br>
-The original application had only a single, all-access role and lacked user input validation and error handling. This enhancement focused on implementing role-based access control (RBAC) using Angular route guards and service-level authorization checks for both users and administrators. I also added reactive form validation to enforce data integrity and abstracted API calls into dedicated services to improve modularity and testability.</p>
+The original application had only a single, all-access role and lacked user input validation and error handling. This enhancement focused on implementing RBAC using Angular route guards and service-level authorization checks for both users and administrators. I also added reactive form validation to enforce data integrity and abstracted API calls into dedicated services to improve modularity and testability.</p>
 
 <p><strong>Reflection on the Enhancement Process:</strong><br>
 Professionally, I specialize in Identity and Access Management, but my experience has mostly been at the architectural or administrative level. This was my first hands-on implementation of RBAC as a developer, and I found it both enlightening and essential.</p>
