@@ -151,7 +151,7 @@ Professionally, I specialize in Identity and Access Management, but my experienc
 <p>This enhancement aligns with the <strong>Software Design & Engineering</strong> outcome by improving maintainability, scalability, and security. It also supports the <strong>Security</strong> outcome through RBAC enforcement and the <strong>Professional Communication</strong> outcome through narratable architecture decisions, as detailed in the code review and enhancement documentation.</p>
 
 </details>
-
+<br>
 [⬆️ Back to Top](#top)
 
 ---
