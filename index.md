@@ -136,7 +136,7 @@ This enhancement focused on modularizing the Angular frontend, implementing rout
 
 <details>
 <summary><strong>📘 Read Enhancement Narrative</strong></summary>
-
+<br>
 <p><strong>Description of Artifact:</strong><br>
 The original artifact for this enhancement was the Angular frontend portion of the Travlr Trip Listings MEAN stack app, created during CS465 (July–August 2025).</p>
 
