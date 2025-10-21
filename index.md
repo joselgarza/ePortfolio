@@ -210,7 +210,7 @@ Enhancing this artifact taught me how to sequence backend and frontend improveme
 
 <p>As if that wasn’t enough, when the form was being tested and bad or unexpected data hit the backend after the improvements, the server would crash and halt the website hosting. I identified that the <code>addTrip</code> function in the Trip class needed to handle the exception flagged by the newly introduced backend data validation properly. I did this with a <code>try/catch</code>. This was the result of the server operation, before and after:</p>
 
-![Console output of web server before and after exception handling](images/exception_handling.png)
+<p><img src="images/exception_handling.png" alt="Console output of web server before and after exception handling"></p>
 
 <p>As you can see, there was an expected validation error with ‘code’ due to the Regex, but then npm would crash. After the <code>try/catch</code> handling, a proper 400 validation now logs in the console, allowing the server to continue normal operations.</p>
 
