@@ -134,6 +134,24 @@ This enhancement focused on modularizing the Angular frontend, implementing rout
 
 🔗 <a href="https://github.com/joselgarza/cs465-fullstack/tree/enhancement-one" target="_blank">View Enhancement One Branch</a>
 
+<details>
+<summary><strong>📘 Read Enhancement Narrative</strong></summary>
+
+**Description of Artifact:**  
+The original artifact for this enhancement was the Angular frontend portion of the Travlr Trip Listings MEAN stack app, created during CS465 (July–August 2025).
+
+**Justification for Enhancements:**  
+The original application had only a single, all-access role and lacked user input validation and error handling. This enhancement focused on implementing role-based access control (RBAC) using Angular route guards and service-level authorization checks for both users and administrators. I also added reactive form validation to enforce data integrity and abstracted API calls into dedicated services to improve modularity and testability.
+
+**Reflection on the Enhancement Process:**  
+Professionally, I specialize in Identity and Access Management, but my experience has mostly been at the architectural or administrative level. This was my first hands-on implementation of RBAC as a developer, and I found it both enlightening and essential.  
+
+One challenge was identifying all the controls that should apply to administrators versus regular users. Testing was critical to ensure that UI/UX behavior remained intuitive while enforcing proper access restrictions. Abstracting API calls into services also helped make the codebase more modular and maintainable.  
+
+This enhancement aligns with the **Software Design & Engineering** outcome by improving maintainability, scalability, and security. It also supports the **Security** outcome through RBAC enforcement and the **Professional Communication** outcome through narratable architecture decisions, as detailed in the code review and enhancement documentation.
+
+</details>
+
 [⬆️ Back to Top](#top)
 
 ---
