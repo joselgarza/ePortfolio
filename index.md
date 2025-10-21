@@ -137,18 +137,96 @@ This enhancement focused on modularizing the Angular frontend, implementing rout
 <details>
 <summary><strong>📘 Read Enhancement Narrative</strong></summary>
 <br>
-<p><strong>Description of Artifact:</strong><br>
-The original artifact for this enhancement was the Angular frontend portion of the Travlr Trip Listings MEAN stack app, created during CS465 (July–August 2025).</p>
+<h3>🧩 Artifact Description</h3>
 
-<p><strong>Justification for Enhancements:</strong><br>
-The original application had only a single, all-access role and lacked user input validation and error handling. This enhancement focused on implementing RBAC using Angular route guards and service-level authorization checks for both users and administrators. I also added reactive form validation to enforce data integrity and abstracted API calls into dedicated services to improve modularity and testability.</p>
+<p>
+The artifact is a modular Angular application originally developed in a prior course (<strong>CS-465 Full-Stack Development I</strong>) on <strong>August 18, 2025</strong>. It includes user and admin views for managing travel listings.
+</p>
 
-<p><strong>Reflection on the Enhancement Process:</strong><br>
-Professionally, I specialize in Identity and Access Management, but my experience has mostly been at the architectural or administrative level. This was my first hands-on implementation of RBAC as a developer, and I found it both enlightening and essential.</p>
+<p>
+The focal point of my enhancements for this project lies in the original admin Angular site in the <code>./app_admin/</code> directory. The original code relied on a legacy service (<code>TripData</code>) and lacked modularity, role-aware logic (any user could perform CRUD operations on the trips listed), and shared UI enhancements.
+</p>
 
-<p>One challenge was identifying all the controls that should apply to administrators versus regular users. Testing was critical to ensure that UI/UX behavior remained intuitive while enforcing proper access restrictions. Abstracting API calls into services also helped make the codebase more modular and maintainable.</p>
+<p>
+I began enhancing this artifact in the week of <strong>September 15, 2025</strong>, as part of <strong>CS-499</strong>.
+</p>
 
-<p>This enhancement aligns with the <strong>Software Design & Engineering</strong> outcome by improving maintainability, scalability, and security. It also supports the <strong>Security</strong> outcome through RBAC enforcement and the <strong>Professional Communication</strong> outcome through narratable architecture decisions, as detailed in the code review and enhancement documentation.</p>
+<h3>✅ Justification for Inclusion</h3>
+
+<p>
+I selected this artifact because it showcases my ability to refactor legacy code into a maintainable, modular architecture while aligning with a strategic enhancement plan. I originally remember my first go with the original project, wishing I had more time to improve various aspects of the framework presented. The work demonstrates my skills in secure design, service abstraction, and user experience optimization.
+</p>
+
+<p>Specifically, I implemented:</p>
+
+<ul>
+  <li><strong>Role-Based Access Control (RBAC):</strong> Introduced user vs admin roles throughout the application to support differentiated access and layout logic
+      <br>
+      <img src="images/rbac.png" alt="RBAC user screenshot" width="600">
+      <br>
+      <img src="images/rbac2.png" alt="RBAC admin screenshot" width="600">
+  </li>
+  <li><strong>Route Guards:</strong> Protected administrative routes (<code>AddTrip</code>, <code>EditTrip</code>) using Angular route guards to enforce role-based navigation</li>
+  <li><strong>Service-Level Authorization Checks:</strong> Centralized role and token validation logic to ensure secure, maintainable access control across components
+      <br>
+      <img src="images/authCheck.png" alt="Service-Level Authorization Check" width="600">
+  </li>
+  <li><strong>Reactive Form Validation in Login:</strong> Implemented real-time validation feedback for login credentials to improve usability and reduce authentication errors
+      <br>
+      <img src="images/formValidation.png" alt="Reactive Form Validation" width="600">
+  </li>
+  <li><strong>API Abstraction via <code>TripService</code> and <code>AuthService</code>:</strong> Refactored legacy logic into modular services for trip and authentication operations, improving maintainability and separation of concerns</li>
+  <li><strong>Shared Search Functionality:</strong> Added a reactive <code>SearchService</code> and centralized UI search input in the navigation bar to enable real-time trip filtering across both user and admin views
+      <br>
+      <img src="images/search.png" alt="Service-Level Authorization Check" width="600">
+  </li>
+</ul>
+
+<p>
+These enhancements align with software engineering best practices and demonstrate my ability to deliver impactful improvements that span architecture, security, and user experience.
+</p>
+
+<h3>🎯 Course Outcomes Met</h3>
+
+<p>
+This enhancement demonstrates substantial progress toward the following Computer Science program outcomes:
+</p>
+
+<ul>
+  <li><strong>Design and evaluate computing solutions:</strong> I refactored legacy trip logic into modular services and implemented reactive search and form validation to solve usability and maintainability challenges using algorithmic principles and modern Angular practices.</li>
+  
+  <li><strong>Demonstrate innovative techniques in software engineering/design/database:</strong> I abstracted API calls into dedicated services (<code>TripService</code>, <code>AuthService</code>), implemented role-based access control (RBAC), and added route guards and service-level authorization checks to enforce secure, scalable architecture.</li>
+  
+  <li><strong>Develop a security mindset:</strong> I anticipated potential vulnerabilities by restricting access to administrative routes, validating user roles at both the routing and service levels, and improving authentication flows to ensure privacy and protect sensitive operations.</li>
+  
+  <li><strong>Deliver professional-quality communication:</strong> I narrated each enhancement with clarity and strategic intent, aligning my technical decisions with rubric expectations and preparing the artifact for ePortfolio presentation and instructor review.</li>
+</ul>
+
+<h3>🔍 Reflection on the Enhancement Process</h3>
+
+<p>
+Enhancing this artifact taught me how to sequence improvements for maximum impact. I began by refactoring trip logic into a modular service, then layered in reactive search and role-aware layout logic. I faced challenges adapting legacy code to modern Angular architecture, especially when replacing <code>TripData</code> and ensuring parity across components. I also had to troubleshoot route guards and conditional rendering to ensure seamless user experience. I found that I spent as much time troubleshooting as I did improving. Some initial improvements broke existing, well-behaved features, so that took time to unravel and align properly.
+</p>
+
+<p>
+To reinforce role-based access control, I implemented admin and user roles, extended the user attribute in the database schema to support roles, and used Angular route guards to restrict access to administrative routes such as <code>AddTrip</code> and <code>EditTrip</code>. These guards validate the user's role before allowing navigation, ensuring that only authenticated admins can modify trip data. This enhancement strengthens the application’s security posture and aligns with best practices for protecting sensitive operations in multi-role systems.
+</p>
+
+<p>
+When considering enhancements to the <code>AddTrip</code> and <code>EditTrip</code> forms, I found that reactive form validation was already implemented in the original artifact. Rather than duplicating effort, I focused on preserving that functionality while refactoring the underlying service logic to use the new <code>TripService</code>. This decision reflects my ability to prioritize impact and avoid unnecessary rework.
+</p>
+
+<p>
+In addition to preserving reactive validation in the <code>AddTrip</code> and <code>EditTrip</code> forms, I implemented reactive form validation for the login page. I had originally added some light validation (which was not part of the project at that time but I could not in good faith leave it in such a state), but this was an attempt to use native tools in Angular to perform validation with minimal overhead. This enhancement ensures that users receive immediate feedback when submitting incomplete credentials, improving usability and reducing authentication errors. It also aligns with best practices for secure and user-friendly form design.
+</p>
+
+<p>
+Through this process, I strengthened my ability to plan strategically, refactor methodically, and narrate technical decisions for academic and professional audiences. These enhancements not only improved the application but also deepened my understanding of modular design, maintainable architecture, and secure software engineering practices.
+</p>
+
+<p>
+Moving forward, one lesson learned is to take each part of an overall enhancement one session at a time rather than cram entire solutions in. This will help minimize the amount of rework while helping me focus on each improvement with a clear and relaxed mind. Sometimes the more I do, the more I make mistakes. As the solution grows with each enhancement, I can see time management as well as a more risk-averse approach to be helpful.
+</p>
 
 </details>
 <br>
