@@ -342,26 +342,103 @@ This enhancement added compound indexing, normalized schema inputs, and improved
 <details>
 <summary><strong>📘 Read Enhancement Narrative</strong></summary>
 <br>
-<p><strong>Description of Artifact:</strong><br>
-The original artifact for this enhancement was the MongoDB database layer supporting the Travlr Trip Listings MEAN stack app, created during CS465 (July–August 2025).</p>
+<h3>🧩 Artifact Description</h3>
 
-<p><strong>Justification for Enhancements:</strong><br>
-The original implementation lacked advanced indexing and schema validation. This enhancement focused on improving query performance, input integrity, and search capabilities. I added a <code>$text</code> index on key fields like destination and description, created compound indexes (e.g., destination + date), and enforced schema validation using Mongoose to prevent injection and ensure data consistency.</p>
+<p>
+The artifact is a modular Angular application originally developed in <strong>CS-465 Full-Stack Development I</strong> on <strong>August 18, 2025</strong>. It includes user and admin views for managing travel listings. My enhancements focus on the admin Angular site located in the <code>/app_admin/</code> directory.
+</p>
 
-<p><strong>Reflection on the Enhancement Process:</strong><br>
-Enhancing this artifact taught me how to sequence backend and frontend improvements for narratable clarity. I began by refining the trip schema, ensuring the full text search, then layered in compound indexing, followed by frontend validation and backend query precision. I faced challenges with exact string matching, millisecond-level date alignment, and index usage verification. These issues required methodical debugging and reinforced the importance of data integrity and query design. I could still improve the search experience, further error handling, and more, but I wanted to stay within scope of this enhancement as well as the overall project.</p>
+<p>
+For Enhancement Three, I extended the backend and frontend functionality to support compound indexing, schema validation, and narratable input sanitization. This enhancement builds on the modular architecture established in prior milestones and introduces a refined trip schema, improved search performance, and frontend validation feedback aligned with backend logic.
+</p>
 
-<p>One key lesson was the importance of validating index usage with <code>.explain()</code>. Even when indexes were defined correctly, MongoDB’s query planner required exact matches to trigger them. I learned to inspect stored values, adjust query formats, and use range queries when necessary. This reinforced my ability to debug backend logic with surgical precision. It was interesting to find that while compound searching required exact values, the search bar in the UI utilizes fuzzy search for a much better experience.</p>
+<h3>✅ Justification for Inclusion</h3>
 
-<p>I also learned to align frontend validation with backend schema rules. By showing inline error messages as soon as fields were touched or typed into, I improved user experience and reduced backend rejections. This narratable polish reflects my empathy for users and attention to edge cases. Although I began with putting further constraints in the Angular forms, I found that the add-trip HTML did not deliver any handling messages to the admin, leaving them to fend for themselves on why they could not add a trip. I couldn’t leave it as is and further introduced input handling and validation which aligned to the previous database schema enhancements.</p>
+<p>
+I selected this enhancement to demonstrate my ability to optimize database queries, enforce schema integrity, and align frontend UX with backend expectations. The original artifact lacked robust indexing and relied on loose validation, which risked inconsistent data and inefficient queries. This enhancement showcases my skills in MongoDB index design, Angular form validation, and narratable backend resilience.
+</p>
 
-<p>As if that wasn’t enough, when the form was being tested and bad or unexpected data hit the backend after the improvements, the server would crash and halt the website hosting. I identified that the <code>addTrip</code> function in the Trip class needed to handle the exception flagged by the newly introduced backend data validation properly. I did this with a <code>try/catch</code>. This was the result of the server operation, before and after:</p>
+<p>Specifically, I implemented:</p>
 
-<p><img src="images/exception_handling.png" alt="Console output of web server before and after exception handling"></p>
+<ul>
+  <li>
+    <strong>Compound Indexing for Resort and Start Date:</strong> With full <code>$text</code> search already implemented in Enhancement Two, I created a performant index to support precise resort/date filtering and validated its usage via <code>.explain()</code> in the MongoDB console.
+    <br>
+    <img src="images/e3-1.png" alt="Compound index creation screenshot" width="600">
+    <img src="images/e3-2.png" alt="Compound index usage screenshot" width="600">
+    <br>
+    <img src="images/e3-3.png" alt="MongoDB explain output 1" width="600">
+    <img src="images/e3-4.png" alt="MongoDB explain output 2" width="600">
+    <img src="images/e3-5.png" alt="MongoDB explain output 3" width="600">
+  </li>
 
-<p>As you can see, there was an expected validation error with ‘code’ due to the Regex, but then npm would crash. After the <code>try/catch</code> handling, a proper 400 validation now logs in the console, allowing the server to continue normal operations.</p>
+  <li>
+    <strong>Schema Validation and Sanitization:</strong> Refined the trip schema to enforce regex patterns, required fields, and consistent formats for dates, prices, and image names.
+    <br>
+    <img src="images/e3-6.png" alt="Mongoose improvements with Regex and Santization" width="600">
+  </li>
 
-<p>Through this process, I strengthened my ability to plan enhancements strategically, troubleshoot backend issues methodically, and narrate technical decisions with clarity. I have found that, while introducing backend improvements, frontend improvements needed attention to really bring the value home. The nature of the full-stack application proved the same in the last enhancement when I introduced the search bar. Without the full text and fuzzy search at a minimum, the search bar would do nothing at all. The entire project experience has been rewarding overall, and it was a wise choice to scale back in my original plan when I did so that I could make all the required improvements holistically throughout the process.</p>
+  <li>
+    <strong>Frontend Validation Feedback:</strong> Updated the Angular form to show inline error messages immediately upon field interaction, improving UX and reducing backend rejections.
+      <br>
+    <img src="images/e3-7.png" alt="AddTrip improvements" width="600">
+      <img src="images/e3-8.png" alt="UX sample" width="600">
+  </li>
+
+  <li>
+    <strong>Narratable Debugging:</strong> Diagnosed mismatches between query inputs and stored data, including whitespace, casing, and millisecond-level precision in Date objects, enforcing sanitized input to match expected backend data validation and improvements.
+    <br>
+    <img src="images/e3-9.png" alt="Debugging input mismatch screenshot" width="600">
+  </li>
+</ul>
+
+<p>
+These enhancements align with software engineering best practices and demonstrate my ability to deliver narratable, strategic improvements that span database optimization, frontend polish, and backend precision.
+</p>
+
+<h3>🎯 Course Outcomes Met</h3>
+
+<p>
+This enhancement demonstrates substantial progress toward the following Computer Science program outcomes:
+</p>
+
+<ul>
+  <li><strong>Design and evaluate computing solutions:</strong> I designed a compound index strategy for resort/date filtering, evaluated its performance using <code>.explain()</code>, and integrated it into the backend architecture.</li>
+  <li><strong>Demonstrate innovative techniques in software engineering/design/database:</strong> I implemented compound indexing, regex-based schema validation, and real-time frontend feedback to deliver a narratable and user-friendly experience.</li>
+  <li><strong>Develop a security mindset:</strong> I enforced strict input validation and sanitized schema fields to prevent malformed data and ensure backend stability.</li>
+  <li><strong>Deliver professional-quality communication:</strong> I narrated each enhancement with clarity and strategic intent, aligning my technical decisions with rubric expectations and preparing the artifact for ePortfolio presentation and instructor review.</li>
+</ul>
+
+<h3>🔍 Reflection on the Enhancement Process</h3>
+
+<p>
+Enhancing this artifact taught me how to sequence backend and frontend improvements for narratable clarity. I began by refining the trip schema, ensuring the full text search, then layered in compound indexing, followed by frontend validation and backend query precision. I faced challenges with exact string matching, millisecond-level date alignment, and index usage verification. These issues required methodical debugging and reinforced the importance of data integrity and query design. I could still improve the search experience, further error handling, and more, but I wanted to stay within scope of this enhancement as well as the overall project.
+</p>
+
+<p>
+One key lesson was the importance of validating index usage with <code>.explain()</code>. Even when indexes were defined correctly, MongoDB’s query planner required exact matches to trigger them. I learned to inspect stored values, adjust query formats, and use range queries when necessary. This reinforced my ability to debug backend logic with surgical precision. It was interesting to find that while compound searching required exact values, the search bar in the UI utilizes fuzzy search for a much better experience.
+</p>
+
+<p>
+I also learned to align frontend validation with backend schema rules. By showing inline error messages as soon as fields were touched or typed into, I improved user experience and reduced backend rejections. This narratable polish reflects my empathy for users and attention to edge cases. Although I began with putting further constraints in the Angular forms, I found that the add-trip HTML did not deliver any handling messages to the admin, leaving them to fend for themselves on why they could not add a trip. I couldn’t leave it as is and further introduced input handling and validation which aligned to the previous database schema enhancements.
+</p>
+
+<p>
+As if that wasn’t enough, when the form was being tested and bad or unexpected data hit the backend after the improvements, the server would crash and halt the website hosting. I identified that the <code>addTrip</code> function in the Trip class needed to handle the exception flagged by the newly introduced backend data validation properly. I did this with a <code>try/catch</code>. This was the result of the server operation, before and after:
+</p>
+
+<p>
+<img src="images/exception_handling.png" alt="Console output before and after exception handling" width="600">
+</p>
+
+<p>
+As you can see, there was an expected validation error with ‘code’ due to the Regex, but then npm would crash. After the <code>try/catch</code> handling, a proper 400 validation now logs in the console, allowing the server to continue normal operations.
+</p>
+
+<p>
+Through this process, I strengthened my ability to plan enhancements strategically, troubleshoot backend issues methodically, and narrate technical decisions with clarity. I have found that, while introducing backend improvements, frontend improvements needed attention to really bring the value home. The nature of the full-stack application proved the same in the last enhancement when I introduced the search bar. Without the full text and fuzzy search at a minimum, the search bar would do nothing at all. The entire project experience has been rewarding overall, and it was a wise choice to scale back in my original plan when I did so that I could make all the required improvements holistically throughout the process.
+</p>
+
 
 </details>
 <br>
