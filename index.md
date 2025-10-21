@@ -169,12 +169,16 @@ This enhancement restored backend search functionality, refined regex validation
 The original artifact for this enhancement was the backend portion of the Travlr Trip Listings MEAN stack app, created during CS465 (July–August 2025).</p>
 
 <p><strong>Justification for Enhancements:</strong><br>
-The original application lacked search functionality and had limited support for flexible queries. This enhancement introduced a full-stack search feature that allows users to locate trips based on destination, tags, or description. I implemented fuzzy matching using MongoDB’s <code>$text</code> and <code>$regex</code> operators, added pagination with <code>skip</code> and <code>limit</code>, and incorporated a hash map-based caching layer to store frequent search terms and reduce redundant queries.</p>
+The original application lacked search functionality and had limited support for flexible queries. This enhancement introduced a full-stack search feature that allows users to locate trips based on destination, tags, or description. I implemented fuzzy matching using MongoDB’s <code>$text</code> and <code>$regex</code> operators as well as added pagination with <code>skip</code> and <code>limit</code> parameters.</p>
 
 <p><strong>Reflection on the Enhancement Process:</strong><br>
-This enhancement gave me the opportunity to apply algorithmic principles and data structure design in a real-world context. One challenge was balancing strict validation with flexible search input. I refined regex logic to support partial matches while maintaining input integrity. Testing edge cases helped ensure consistent behavior across different query formats.</p>
+Enhancing this artifact taught me how to sequence backend and frontend improvements for  clarity. I began by designing the search endpoint, then layered in full-text and fuzzy logic, followed by pagination and frontend integration. I faced challenges with JSON parsing errors, proxy misrouting, and variable scoping in the backend. These issues required methodical debugging and reinforced the importance of clear response formatting and defensive coding.</p>
 
-<p>Instructor feedback encouraged me to narrate the search logic clearly and validate the caching strategy. This enhancement aligns with the <strong>Algorithms & Data Structures</strong> outcome through recursive logic, regex refinement, and search optimization. It also supports <strong>Security</strong> and <strong>Software Engineering</strong> by enforcing input validation and improving backend resilience.</p>
+<p>One key lesson was the importance of narratable fallback logic. When MongoDB’s <code>$text</code> search failed to match typos like “daweson,” the fuzzy fallback ensured that users still received relevant results. This layered approach reflects my ability to anticipate edge cases and design resilient systems.</p>
+
+<p>I also learned to manage verbosity in backend logging. During testing, I logged entire result sets to the console, which became overwhelming. I refined this by summarizing result counts and search terms, maintaining traceability without sacrificing clarity. Through this process, I strengthened my ability to plan enhancements strategically, troubleshoot full-stack issues methodically, and narrate technical decisions.</p>
+
+<p>This enhancement aligns with the <strong>Algorithms & Data Structures</strong> outcome through recursive logic, regex refinement, and search optimization. It also supports <strong>Security</strong> and <strong>Software Engineering</strong> by enforcing input validation and improving backend resilience.</p>
 
 </details>
 <br>
